@@ -6,23 +6,31 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/responsive.css">
     <title>Make IT</title>
 </head>
 <body>
 
-    
+    <div id="page_container">
     <div class="header_container">
         <header>
             <figure><img src="img/header/header_logo.png" alt="Make IT"></figure>
             <nav>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">What is it for?</a></li>
-                    <li><a href="#">Advantages</a></li>
-                    <li><a href="#">Team</a></li>
-                    <li><a href="#">About us</a></li>
-                    <li><a href="#">Contacts</a></li>
-                </ul>
+
+                <!-- hamburger menu -->
+
+                <input type="checkbox" id="checkbox_menu">
+                <label for="checkbox_menu">
+                    <ul class="menu">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">What is it for?</a></li>
+                        <li><a href="#">Advantages</a></li>
+                        <li><a href="#">Team</a></li>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Contacts</a></li>
+                    </ul>
+                    <span class="toggle">&#9776</span>
+                </label>
             </nav>
             <div class="right_block"><a href="#">Work with us 
                     <img src="img/header/header_arrow.png" alt="">    
@@ -59,6 +67,20 @@
         <section class="slider">
             <h1>bringing your ideas to <b style="color: rgba(0, 0, 0, 0.8)">life!</b></h1>
             <div class="slider_container">
+                <div class="text_block">
+                    <h5>Whenever you experience these issues</h5>
+                </div>
+                <div class="slider_display">
+                    <div class="arrows">
+                        <img id="left_arrow" src="img/slider/left_arrow.png" alt="">
+                        <img id="right_arrow" src="img/slider/right_arrow.png" alt="">
+                    </div>
+                    <div class="slider_text">
+                            <a class="slide_text" href="">Planning to <br> expand?</a>
+                            <a class="slide_text" href="">Don’t have an <br> office?</a>
+                            <a class="slide_text" href="">Finding it difficult to <br> manage staff?</a>
+                    </div>
+                </div>
 
             </div>
         </section>
@@ -150,6 +172,7 @@
         </div>
 
     </main>
+    </div>
     
 </body>
 
